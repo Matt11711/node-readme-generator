@@ -19,7 +19,8 @@
     
 
   ## Installation
-  Copy the code in the repo and, as long as you have node.js and the package.json file, you should be able to run npm install to automatically install all the necessary packages and dependencies.
+  Copy the code in the repo and, as long as you have node.js and the package.json file, you should be able to run npm install to automatically install all the necessary packages and dependencies. See video below for an example of typical use.
+  [Example Video](https://drive.google.com/file/d/1t7QhaziSnx6W9iepMX8eJDa3cimIdGqR/view)
     
    ## Usage
       
