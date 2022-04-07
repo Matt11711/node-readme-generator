@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Includes packages needed for this application
 const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs')
-// TODO: Create an array of questions for user input
+// an array of questions for user input
 const questions = [
     {
       type: 'input',
@@ -94,22 +94,8 @@ const questions = [
       }];
 
 
-const dummyData = 
-    {
-        title: 'generator',
-        description: 'a generator',
-        installation: 'dfdfd',
-        usage: 'type things',
-        contributors: 'me',
-        testing: 'none',
-        license: 'AGPL v3',
-        github: 'matt',
-        email: 'sdsd'
-      }
 
-
-
-// TODO: Create a function to write README file
+// a function to write README file
 function writeToFile( data) {
     fs.writeFile('./src/README.md',generateMarkdown(data),err => {
         if (err) {
@@ -120,14 +106,10 @@ function writeToFile( data) {
     })
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     return inquirer.prompt(questions).then((data)=> writeToFile(data))
 }
-// function init(data) {
-//     console.log(generateMarkdown(data))
-// }
 
-// console.log(dummyData)
 // Function call to initialize app
-init(dummyData);
+init();
